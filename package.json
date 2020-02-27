@@ -1,0 +1,37 @@
+{
+  "name": "authentication-service",
+  "version": "1.0.0",
+  "description": "authentican servise based on koa.js framework",
+  "main": "server.js",
+  "repository": "https://github.com/iamgkstack/authentication-service.git",
+  "author": "iamgkstack <gauravkumar5295@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node server.js",
+    "lint": "eslint --fix app config migrations test",
+    "test": "yarn run lint && jest --forceExit --runInBand",
+    "test-ci": "yarn test -- --coverage"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "pg": "^7.18.1",
+    "pg-hstore": "^2.3.3",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.8",
+    "sequelize": "^5.21.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "istanbul": "^0.4.5",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2"
+  }
+}
